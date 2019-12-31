@@ -1,0 +1,22 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 6666
+  servlet:
+    context-path: /ninja
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ninja?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123
+  #kafka:
+
+
+mybatis:
+  #mybatis配置文件
+  #config-location:
+  #mapper映射文件
+  mapper-locations: classpath:mapper/*Mapper.xml
+
